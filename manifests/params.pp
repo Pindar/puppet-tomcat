@@ -18,7 +18,7 @@ class tomcat::params {
 
   # Let's deal with versions madness
   $pkgver = $::operatingsystem ? {
-    ubuntu                          => 'tomcat6',
+    ubuntu                          => 'tomcat7',
     debian                          => $::lsbmajdistrelease ? {
       5       => 'tomcat5.5',
       6       => 'tomcat6',
